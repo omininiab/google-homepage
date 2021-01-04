@@ -1,4 +1,4 @@
-# search
+# google-homepage
 Clone google homepage using html and css
 header, 5 divs, footer (7 rows in grid)
 
