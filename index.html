@@ -5,39 +5,56 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- Compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="/main.css" type="text/css">
+        <link rel="icon" type="image/svg" href="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg">
         <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Google</title>
     </head>
     <body>
-        <header class="navbar">
-            <nav class="nav-wrapper">
-                <p class="left">About</p>
-                <p class="left">Store</p>
-                <p class="right">Gmail</p>
-                <p class="right">Images</p>
+        <header id="header" class="navbar">
+            <nav id="nav" class="nav-wrapper">
+                <div class="left left-nav">
+                    <a href="https://about.google" class="nav-link">About</a>
+                    <a href="https://www.store.google.com" class="nav-link">Store</a>
+                </div>
+                <div class="right right-nav">
+                    <a href="https://mail.google.com" class="nav-link">Gmail</a>
+                    <a href="https://www.google.ca/imghp?hl=fr&tab=wi&authuser=0&ogbl" class="nav-link">Images</a>
+                    <a class="nav-link" href="https://www.google.ca/intl/en/about/products?tab=wh" target="_blank">
+                        <i class="tiny material-icons">apps</i>
+                    </a>
+                    <img id="profile-pic" src="/profile-pic.png">
+                </div> 
             </nav>
         </header>
-        <main>
-            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"/>
-            <form action="https://www.google.com/search?safe=active&ei=r4vzX6ubCqOa_Qa5xJDwBQ&q=">
-                <input type="text" name="query" id="search-bar">
-                <input type="button" value="query">
-                <input type="button" value="query">
-            </form>
-        </main>
-        <footer>
-            <div>
-                <p>Canada</p>
-            </div>
-            <div class="nav-wrapper">
-                <p class="left">Advertising</p>
-                <p class="left">Business</p>
-                <p class="left">How Search works</p>
-                <p class="right">Privacy</p>
-                <p class="right">Terms</p>
-                <p class="right">Settings</p>
+        <main id="main">
+            <div id="google-search" class="container-lg">
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"/>
+                <form id="form" action="https://www.google.com/search?safe=active&ei=r4vzX6ubCqOa_Qa5xJDwBQ&q=">
+                    <input type="text" name="query" id="search-bar">
+                    <input id="search" class="btn normal-text" type="submit" value="Google Search">
+                    <button id="doodles" class="btn"><a class="nav-link normal-text" href="https://www.google.com/doodles">I'm Feeling Lucky</a></button>
+                </form>
+                <p>Google offered in: <a href="https://www.google.com/setprefs?sig=0_dS63Gc6rR89eFRiIMv1Z2PENtSI%3D&hl=fr&source=homepage&sa=X&ved=0ahUKEwibmtrqn4TuAhXtGVkFHazGAs8Q2ZgBCBE">Français</a></p>
             </div>
             
+        </main>
+        <footer id="footer" class="page-footer">
+            <div class="left-nav">
+                <a class="normal-text">Canada</a>
+            </div>
+            <hr/>
+            <div class="left left-nav">
+                <a class="nav-link" href="https://www.google.com/intl/en_ca/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+                <a class="nav-link" href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
+                <a class="nav-link" href="https://google.com/search/howsearchworks/?fg=1">How Search works</a>
+            </div>
+            <div class="right right-nav">
+                <a class="nav-link" href="https://policies.google.com/privacy?hl=en-CA&fg=1">Privacy</a>
+                <a class="nav-link" href="https://policies.google.com/terms?hl=en-CA&fg=1">Terms</a>
+                <a class="nav-link" href="https://www.google.com/preferences?hl=en">Settings</a>
+            </div>
         </footer>
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
