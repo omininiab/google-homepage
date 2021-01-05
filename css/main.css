@@ -1,6 +1,6 @@
 :root {
     --dk-color: #202142;
-    --md-color: #20214295;
+    --md-color: #20214280;
     --lt-color: #f2f2f2;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
@@ -61,19 +61,18 @@ body {
     color: var(--dk-color);
     text-transform: capitalize;
     margin-right: 10px;
-    font-size: 14px;
+    font-size: 13px;
+    line-height: 1;
 }
 
 #search, #doodles {
     background-color: var(--lt-color);
     border-radius: 5px;
-    box-shadow: none;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
 }
 
 #search:hover, #doodles:hover {
-    box-shadow: 1px;
     border: 1px var(--lt-color) solid;
 }
 
@@ -81,6 +80,7 @@ body {
     border: 2px var(--lt-color) solid;
     border-radius: 35px;
     padding-left: 15px;
+    margin-bottom: 5px;
 }
 
 #google-search {
@@ -89,6 +89,8 @@ body {
     flex-direction: column;
     align-items: center;
     padding-bottom: 32.5vh;
+    max-width: 700px;
+    width: 95vw;
 }
 
 #form {
@@ -99,4 +101,5 @@ body {
 
 #google-search img {
     padding: 5%;
+    max-width: 50vw;
 }
