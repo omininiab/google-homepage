@@ -3,7 +3,6 @@
     --md-color: #20214280;
     --lt-color: #f2f2f2;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 13px;
 }
 
 body {
@@ -31,15 +30,6 @@ body {
     top: 0;
 }
 
-.bottom-nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    padding-right: 2%;
-    padding-left: 2%;
-}
-
 #main {
     background-color: #ffffff;
     box-shadow: none;
@@ -50,26 +40,25 @@ body {
     height: 35px;
     width: 35px;
     border-radius: 50%;
+    padding: 2%;
 }
 
 #footer {
     background-color: var(--lt-color);
-    border-top: .1px solid var(--md-color);
     bottom: 0;
 }
-.nav-link, .normal-text {
+
+.normal-text, .nav-link {
     color: var(--dk-color);
     text-transform: capitalize;
-    margin-right: 10px;
-    font-size: 13px;
+    margin: 10px;
     line-height: 1;
 }
 
 #search, #doodles {
     background-color: var(--lt-color);
     border-radius: 5px;
-    margin-top: 2.5%;
-    margin-bottom: 2.5%;
+    margin: 2%;
 }
 
 #search:hover, #doodles:hover {
@@ -107,8 +96,5 @@ body {
 @media (max-width: 768px) {
     #about, #store {
         visibility: hidden;
-    }
-    .bottom-nav {
-        float:none;
     }
 }
